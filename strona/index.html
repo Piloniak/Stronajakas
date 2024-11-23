@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    header {
+        background-color: #8feb52;
+        color: #000000;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    fieldset {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    legend {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    input {
+        margin: 5px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    textarea {
+        margin: 5px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 300px;
+        height: 100px;
+    }
+
+    button {
+        margin: 10px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: solid black;
+        background-color: #a5a5a5;
+        color: #000000;
+        cursor: pointer;
+    }
+    
+    #przycisk{
+        animation: transitionIn 1s;
+        transition: all 0.5s linear;
+    }
+
+    @keyframes transitionIn{
+     from{
+            opacity: 0;
+            transform: translateY(-100%);
+     }
+        to{
+                opacity: 1;
+                transform: translateY(0);
+        }
+    }
+    button:hover{
+        margin: 10px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: solid black;
+        background-color: #545554;
+        color: white;
+        cursor: pointer;
+    }
+
+    button a {
+        color: inherit;
+        text-decoration: none;
+    }
+    </style>
+    <title>Stan psychiczny pacjenta</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Stan psychiczny pacjenta</h1>
+    </header>
+
+    <main>
+        
+            <fieldset>
+                <legend>Dane pacjenta</legend>
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="surname">Nazwisko:</label>
+                <input type="text" id="surname" name="surname" required><br>
+                <label for="age">Wiek:</label>
+                <input type="number" id="age" name="age" required><br>
+            </fieldset>
+           <fieldset>
+                <label for="question1"> Czy masz dobry kontakt z rodziną? </label><br>
+                <br>
+                
+                <a>a</a><input type="radio" id="question1" name="question1" value="a"> Zdecydowanie nie <br>
+                <a>b</a><input type="radio" id="question1" name="question1" value="b"> Nie <br>
+                <a>c</a><input type="radio" id="question1" name="question1" value="c"> Tak <br>
+                <a>d</a><input type="radio" id="question1" name="question1" Value="d"> Zdecydowanie tak <br> 
+                <label for="question2"> Czy przebywanie wśród ludzi wywołuje u Ciebie niepokój? </label><br>
+                <br>
+                <a>b</a><input type="radio" id="question2" name="question2" value="b"> Nie <br>
+                <a>c</a><input type="radio" id="question2" name="question2" value="c"> Tak <br>
+                <a>a</a><input type="radio" id="question2" name="question2" value="a"> Zdecydowanie nie <br>
+                <a>d</a><input type="radio" id="question2" name="question2" Value="d"> Zdecydowanie tak <br>
+                <br>
+                <label for="question3"> Czy często odczuwasz smutek lub zdenerowowanie? </label><br>
+                <br>
+                <a>a</a><input type="radio" id="question3" name="question3" value="a"> Zdecydowanie nie <br>
+                <a>b</a><input type="radio" id="question3" name="question3" value="b"> Nie <br>
+                <a>c</a><input type="radio" id="question3" name="question3" value="c"> Tak <br>
+                <a>d</a><input type="radio" id="question3" name="question3" Value="d"> Zdecydowanie tak <br>
+                <br>
+                <label for="question4"> Czy masz problemy z motywacją do wykonywania codziennych obowiązków? </label><br>
+                <br>
+                <a>a</a><input type="radio" id="question4" name="question4" value="a"> Zdecydowanie nie <br>
+                <a>b</a><input type="radio" id="question4" name="question4" value="b"> Nie <br>
+                <a>c</a><input type="radio" id="question4" name="question4" value="c"> Tak <br>
+                <a>d</a><input type="radio" id="question4" name="question4" Value="d"> Zdecydowanie tak <br>
+                <br>
+                <label for="question5"> Czy często odczuwasz niepokój lub zdenerowowanie? </label><br>
+                <br>
+                <a>a</a><input type="radio" id="question5" name="question5" value="a"> Zdecydowanie nie <br>
+                <a>b</a><input type="radio" id="question5" name="question5" value="b"> Nie <br>
+                <a>c</a><input type="radio" id="question5" name="question5" value="c"> Tak <br>
+                <a>d</a><input type="radio" id="question5" name="question5" Value="d"> Zdecydowanie tak <br>
+                <br>
+                <label for="question6"> Czy masz poczucie, że często martwisz się bez wyraźnej przyczyny? </label><br>
+                <br>
+                <a>a</a><input type="radio" id="question6" name="question6" value="a"> Zdecydowanie nie <br>
+                <a>b</a><input type="radio" id="question6" name="question6" value="b"> Nie <br>
+                <a>c</a><input type="radio" id="question6" name="question6" value="c"> Tak <br>
+                <a>d</a><input type="radio" id="question6" name="question6" Value="d"> Zdecydowanie tak <br>
+                <br>
+                <label for="question7"> Czy masz regularny rytm dnia, na przykąłd stałe godziny snu? </label><br>
+                <br>
+                <a>a</a><input type="radio" id="question7" name="question7" value="a"> Zdecydowanie nie <br>
+                <a>b</a><input type="radio" id="question7" name="question7" value="b"> Nie <br>
+                <a>c</a><input type="radio" id="question7" name="question7" value="c"> Tak <br>
+                <a>d</a><input type="radio" id="question7" name="question7" Value="d"> Zdecydowanie tak <br>
+                <br>
+                <label for="question8"> Czy zdarza ci się czuć, że potrzebujesz więcej odpoczynku? </label><br>
+                <br>
+                <a>a</a><input type="radio" id="question8" name="question8" value="a"> Zdecydowanie nie <br>
+                <a>b</a><input type="radio" id="question8" name="question8" value="b"> Nie <br>
+                <a>c</a><input type="radio" id="question8" name="question8" value="c"> Tak <br>
+                <a>d</a><input type="radio" id="question8" name="question8" value="d"> Zdecydowanie tak <br>
+                <br>
+            
+            </fieldset>
+            <button type="submit" id="przycisk" method = "POST">Dalej</button>
+            <script type="text/javascript">
+                document.getElementById('przycisk').addEventListener('click', function(event) {
+                    let isValid = true;
+                    const fields = ['name', 'surname', 'age'];
+                    const questions = ['question1', 'question2', 'question3', 'question4', 'question5', 'question6', 'question7', 'question8'];
+                    let counts = { a: 0, b: 0, c: 0, d: 0 };
+
+                    fields.forEach(function(field) {
+                        const input = document.getElementById(field);
+                        if (!input.value) {
+                            isValid = false;
+                            input.style.borderColor = 'red';
+                            input.style.backgroundColor = '#ffcccc';
+                            if (!input.nextElementSibling || input.nextElementSibling.className !== 'error') {
+                                const error = document.createElement('span');
+                                error.className = 'error';
+                                error.style.color = 'red';
+                                error.textContent = 'Nie wypełniono';
+                                input.parentNode.insertBefore(error, input.nextSibling);
+                            }
+                        } else {
+                            input.style.borderColor = '';
+                            input.style.backgroundColor = '';
+                            if (input.nextElementSibling && input.nextElementSibling.className === 'error') {
+                                input.nextElementSibling.remove();
+                            }
+                        }
+                    });
+
+                    questions.forEach(function(question) {
+                        const inputs = document.getElementsByName(question);
+                        let answered = false;
+                        for (let i = 0; i < inputs.length; i++) {
+                            if (inputs[i].checked) {
+                                answered = true;
+                                counts[inputs[i].value]++;
+                                break;
+                            }
+                        }
+                        if (!answered) {
+                            isValid = false;
+                            const questionLabel = inputs[0].closest('fieldset').querySelector(`label[for=${question}]`);
+                            if (!questionLabel.nextElementSibling || questionLabel.nextElementSibling.className !== 'error') {
+                                const error = document.createElement('span');
+                                error.className = 'error';
+                                error.style.color = 'red';
+                                error.textContent = 'Nie wypełniono';
+                                questionLabel.parentNode.insertBefore(error, questionLabel.nextSibling);
+                            }
+                        } else {
+                            const questionLabel = inputs[0].closest('fieldset').querySelector(`label[for=${question}]`);
+                            if (questionLabel.nextElementSibling && questionLabel.nextElementSibling.className === 'error') {
+                                questionLabel.nextElementSibling.remove();
+                            }
+                        }
+                    });
+
+                    if (!isValid) {
+                        event.preventDefault();
+                        alert('Nie wypełniono formularza do końca');
+                    } else {
+                        let message = '';
+                        if (counts.a > counts.b && counts.a > counts.c && counts.a > counts.d) {
+                            message = 'Niezwłocznie skontaktuj się z psychoterapeutą';
+                        } else if (counts.b > counts.a && counts.b > counts.c && counts.b > counts.d) {
+                            message = 'Skontaktuj się z psychologiem, jeśli to konieczne';
+                        } else if (counts.c > counts.a && counts.c > counts.b && counts.c > counts.d) {
+                            message = 'Kontroluj swój nastrój i stan mentalny';
+                        } else if (counts.d > counts.a && counts.d > counts.b && counts.d > counts.c) {
+                            message = 'Nie musisz się kontaktować z psychologiem';
+                        }
+                        alert(message);
+                        window.location.href = 'index1.php'; 
+                    }
+                });
+            </script>
+        </form>
+    </main>
+  
+    
+</body>
+</html>
